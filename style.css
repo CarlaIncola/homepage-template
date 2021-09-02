@@ -1,0 +1,232 @@
+/* NAV BAR */
+
+#navbar {display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 10px 0px 10px black;
+  z-index: 10;
+  font-size: 30px;
+  font-family: 'Bebas Neue';
+ }
+
+a:hover {
+  color: orange;
+  transition: color 0.3s ease-out;}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav a {
+  display: flex;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  #navbar {
+    width: 100%;
+    font-size: 1em;
+  }
+  
+  a {
+    margin-right: 0.3em;
+  }
+}
+
+body {
+  display: grid;
+  grid-template-columns: 50fr 50fr; 
+  max-width: 100%;
+  height: 100vh;
+  background-position: left;
+  background-color: white;
+  background-size: cover;
+  font-family: 'Bebas Neue';
+  color: white;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://drive.google.com/uc?id=1Yv8GK1i3ITOJqizrsHdjDjRme_PDJqJs");
+}
+
+h1 {
+  font-size: 9rem;
+  margin-top: -4vh;
+  margin-left: 4vw;
+  margin-bottom: 1vh;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-left: 4vw;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: -4vh; 
+  margin-left: 4vw;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: -4vh;
+  margin-left: 4vw;
+}
+
+h1 .h1color {
+  color: orange;
+  font-size: 7rem;
+} 
+
+h2 .h2color {
+  color: orange;
+}
+
+h3 .h3color {
+  color: orange;
+}
+
+h4 .h4color {
+  color: orange;
+}
+
+input {
+  padding: 5px 20%;
+  margin-left: 1vw; 
+  border-radius: 7px;
+  
+}
+
+i {
+  margin-left: 4vw;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  background-size: cover;
+}
+
+.lan {
+  position: absolute;
+  z-index: 11;
+  top: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 0.9rem 0.6rem;
+  font-size: 0.8em;
+  background-color: rgba(70, 214, 108, 0.6);
+  background-image: url("https://drive.google.com/uc?id=1Yv8GK1i3ITOJqizrsHdjDjRme_PDJqJs");
+  background-size: cover;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  cursor: pointer;
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+}
+
+.lan:hover {
+  box-shadow: 0 0px 15px white;
+}
+
+
+
+:lang(en) [data-en] { display: block; } 
+:lang(en) [data-es] { display: none; }
+
+:lang(es) [data-es] { display: block; }
+:lang(es) [data-en] { display: none; }
+
+
+@media (max-width: 688px) {
+  body {
+    text-align: center;
+  }
+  
+  h1 {
+  font-size: 4.5em;
+  margin-top: -2vh;
+  margin-bottom: 1vh;
+  margin-left: 0%;
+}
+  h1 .h1color {
+    font-size: 3.5rem;
+  }
+
+h2 {
+  font-size: 1.5rem;
+  margin-left: 0%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: -2vh; 
+  margin-left: 0%;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: -2vh;
+  margin-left: 0%;
+}
+  
+
+input {
+  margin-left: 1vw;
+}
+
+i {
+  margin-left: 1vw;
+}
+  .lan {
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 360px) { 
+  #navbar {
+    font-size: 1rem;
+  } 
+  
+  h1 {
+  font-size: 4.5em;
+  margin-top: -7.5vh;
+  margin-bottom: 0.5vh;
+  margin-left: 0%;
+}
+  h1 .h1color {
+    font-size: 3.5rem;
+  }
+
+h2 {
+  font-size: 1.5rem;
+  margin-left: 0%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: -7.5vh; 
+  margin-left: 0%;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: -7.5vh;
+  margin-left: 0%;
+}
+  
+  .lan {
+    left: 90vw;
+    top: 25vh;
+  }
+}
